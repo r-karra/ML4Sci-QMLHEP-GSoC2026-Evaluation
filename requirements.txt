@@ -15,7 +15,7 @@ torch-geometric==2.4.0
 # Quantum Computing
 pennylane==0.33.1
 pennylane-qiskit==0.33.1
-qiskit==0.46.0
+qiskit==1.4.2
 qiskit-machine-learning==0.7.1
 
 # JAX Stack (Alternative High-Performance ML)
