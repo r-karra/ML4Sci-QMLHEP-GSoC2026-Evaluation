@@ -229,10 +229,10 @@ For detailed proposal, see [link to your proposal document]
 
 ## ✨ Author & Contact
 
-**Name**: [Your Name]  
-**Email**: [Your Email]  
-**GitHub**: [Your GitHub Profile]  
-**Institution**: [Your University]  
+**Name**: [Rajesh Karra]  
+**Email**: [r.karra.research@gmail.com]  
+**GitHub**: [https://github.com/r-karra/]  
+**Institution**: [Osmania University]  
 
 **Acknowledgments**: 
 - ML4Sci collaboration for project guidance
