@@ -34,6 +34,8 @@ class QuantumAttentionLayer(nn.Module):
         Returns:
             Quantum-processed attention weights
         """
+        input_dim = x.shape[-1]
+        
         # Classical feature embedding
         x = nn.Dense(self.n_qubits)(x)
         x = nn.relu(x)
@@ -43,7 +45,11 @@ class QuantumAttentionLayer(nn.Module):
         x = nn.Dense(self.n_qubits)(x)
         x = jnp.tanh(x)  # Quantum probability amplitudes
         
-        return x
+        # Project back to input dimension for attention weights
+        attn = nn.Dense(input_dim)(x)
+        attn = nn.sigmoid(attn)  # Attention weights between 0 and 1
+        
+        return attn
 
 
 class QuantumParticleTransformer(nn.Module):
